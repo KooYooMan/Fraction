@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html>
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/can2sb5p"></script>
+    <script src="https://js-agent.newrelic.com/nr-1167.min.js"></script>
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "errorBeacon": "bam.nr-data.net", "licenseKey": "2143b8dc87", "applicationID": "313730156", "transactionName": "cFlZEksOXg5UE00QAFJVXwNLEh0BXhQQFwBsRkUJXhNTD0JOAQUXVw==", "queueTime": 0, "applicationTime": 244, "agent": "" }</script>
+    <script>(window.NREUM || (NREUM = {})).loader_config = { licenseKey: "2143b8dc87", applicationID: "313730156" }; window.NREUM || (NREUM = {}), __nr_require = function (e, n, t) { function r(t) { if (!n[t]) { var i = n[t] = { exports: {} }; e[t][0].call(i.exports, function (n) { var i = e[t][1][n]; return r(i || n) }, i, i.exports) } return n[t].exports } if ("function" == typeof __nr_require) return __nr_require; for (var i = 0; i < t.length; i++)r(t[i]); return r }({ 1: [function (e, n, t) { function r() { } function i(e, n, t) { return function () { return o(e, [u.now()].concat(f(arguments)), n ? null : this, t), n ? void 0 : this } } var o = e("handle"), a = e(4), f = e(5), c = e("ee").get("tracer"), u = e("loader"), s = NREUM; "undefined" == typeof window.newrelic && (newrelic = s); var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], l = "api-", d = l + "ixn-"; a(p, function (e, n) { s[n] = i(l + n, !0, "api") }), s.addPageAction = i(l + "addPageAction", !0), s.setCurrentRouteName = i(l + "routeName", !0), n.exports = newrelic, s.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (e, n) { var t = {}, r = this, i = "function" == typeof n; return o(d + "tracer", [u.now(), e, t], r), function () { if (c.emit((i ? "" : "no-") + "fn-start", [u.now(), r, i], t), i) try { return n.apply(this, arguments) } catch (e) { throw c.emit("fn-err", [arguments, this, e], t), e } finally { c.emit("fn-end", [u.now()], t) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (e, n) { m[n] = i(d + n) }), newrelic.noticeError = function (e, n) { "string" == typeof e && (e = new Error(e)), o("err", [e, u.now(), !1, n]) } }, {}], 2: [function (e, n, t) { function r(e, n) { var t = e.getEntries(); t.forEach(function (e) { "first-paint" === e.name ? c("timing", ["fp", Math.floor(e.startTime)]) : "first-contentful-paint" === e.name && c("timing", ["fcp", Math.floor(e.startTime)]) }) } function i(e, n) { var t = e.getEntries(); t.length > 0 && c("lcp", [t[t.length - 1]]) } function o(e) { if (e instanceof s && !l) { var n, t = Math.round(e.timeStamp); n = t > 1e12 ? Date.now() - t : u.now() - t, l = !0, c("timing", ["fi", t, { type: e.type, fid: n }]) } } if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) { var a, f, c = e("handle"), u = e("loader"), s = NREUM.o.EV; if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) { a = new PerformanceObserver(r), f = new PerformanceObserver(i); try { a.observe({ entryTypes: ["paint"] }), f.observe({ entryTypes: ["largest-contentful-paint"] }) } catch (p) { } } if ("addEventListener" in document) { var l = !1, d = ["click", "keydown", "mousedown", "pointerdown", "touchstart"]; d.forEach(function (e) { document.addEventListener(e, o, !1) }) } } }, {}], 3: [function (e, n, t) { function r(e, n) { if (!i) return !1; if (e !== i) return !1; if (!n) return !0; if (!o) return !1; for (var t = o.split("."), r = n.split("."), a = 0; a < r.length; a++)if (r[a] !== t[a]) return !1; return !0 } var i = null, o = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var f = navigator.userAgent, c = f.match(a); c && f.indexOf("Chrome") === -1 && f.indexOf("Chromium") === -1 && (i = "Safari", o = c[1]) } n.exports = { agent: i, version: o, match: r } }, {}], 4: [function (e, n, t) { function r(e, n) { var t = [], r = "", o = 0; for (r in e) i.call(e, r) && (t[o] = n(r, e[r]), o += 1); return t } var i = Object.prototype.hasOwnProperty; n.exports = r }, {}], 5: [function (e, n, t) { function r(e, n, t) { n || (n = 0), "undefined" == typeof t && (t = e ? e.length : 0); for (var r = -1, i = t - n || 0, o = Array(i < 0 ? 0 : i); ++r < i;)o[r] = e[n + r]; return o } n.exports = r }, {}], 6: [function (e, n, t) { n.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (e, n, t) { function r() { } function i(e) { function n(e) { return e && e instanceof r ? e : e ? c(e, f, o) : o() } function t(t, r, i, o) { if (!l.aborted || o) { e && e(t, r, i); for (var a = n(i), f = v(t), c = f.length, u = 0; u < c; u++)f[u].apply(a, r); var p = s[y[t]]; return p && p.push([b, t, r, a]), a } } function d(e, n) { h[e] = v(e).concat(n) } function m(e, n) { var t = h[e]; if (t) for (var r = 0; r < t.length; r++)t[r] === n && t.splice(r, 1) } function v(e) { return h[e] || [] } function g(e) { return p[e] = p[e] || i(t) } function w(e, n) { u(e, function (e, t) { n = n || "feature", y[t] = n, n in s || (s[n] = []) }) } var h = {}, y = {}, b = { on: d, addEventListener: d, removeEventListener: m, emit: t, get: g, listeners: v, context: n, buffer: w, abort: a, aborted: !1 }; return b } function o() { return new r } function a() { (s.api || s.feature) && (l.aborted = !0, s = l.backlog = {}) } var f = "nr@context", c = e("gos"), u = e(4), s = {}, p = {}, l = n.exports = i(); l.backlog = s }, {}], gos: [function (e, n, t) { function r(e, n, t) { if (i.call(e, n)) return e[n]; var r = t(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, n, { value: r, writable: !0, enumerable: !1 }), r } catch (o) { } return e[n] = r, r } var i = Object.prototype.hasOwnProperty; n.exports = r }, {}], handle: [function (e, n, t) { function r(e, n, t, r) { i.buffer([e], r), i.emit(e, n, t) } var i = e("ee").get("handle"); n.exports = r, r.ee = i }, {}], id: [function (e, n, t) { function r(e) { var n = typeof e; return !e || "object" !== n && "function" !== n ? -1 : e === window ? 0 : a(e, o, function () { return i++ }) } var i = 1, o = "nr@id", a = e("gos"); n.exports = r }, {}], loader: [function (e, n, t) { function r() { if (!x++) { var e = E.info = NREUM.info, n = d.getElementsByTagName("script")[0]; if (setTimeout(s.abort, 3e4), !(e && e.licenseKey && e.applicationID && n)) return s.abort(); u(y, function (n, t) { e[n] || (e[n] = t) }), c("mark", ["onload", a() + E.offset], null, "api"); var t = d.createElement("script"); t.src = "https://" + e.agent, n.parentNode.insertBefore(t, n) } } function i() { "complete" === d.readyState && o() } function o() { c("mark", ["domContent", a() + E.offset], null, "api") } function a() { return O.exists && performance.now ? Math.round(performance.now()) : (f = Math.max((new Date).getTime(), f)) - E.offset } var f = (new Date).getTime(), c = e("handle"), u = e(4), s = e("ee"), p = e(3), l = window, d = l.document, m = "addEventListener", v = "attachEvent", g = l.XMLHttpRequest, w = g && g.prototype; NREUM.o = { ST: setTimeout, SI: l.setImmediate, CT: clearTimeout, XHR: g, REQ: l.Request, EV: l.Event, PR: l.Promise, MO: l.MutationObserver }; var h = "" + location, y = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-1167.min.js" }, b = g && w && w[m] && !/CriOS/.test(navigator.userAgent), E = n.exports = { offset: f, now: a, origin: h, features: {}, xhrWrappable: b, userAgent: p }; e(1), e(2), d[m] ? (d[m]("DOMContentLoaded", o, !1), l[m]("load", r, !1)) : (d[v]("onreadystatechange", i), l[v]("onload", r)), c("mark", ["firstbyte", f], null, "api"); var x = 0, O = e(6) }, {}], "wrap-function": [function (e, n, t) { function r(e) { return !(e && e instanceof Function && e.apply && !e[a]) } var i = e("ee"), o = e(5), a = "nr@original", f = Object.prototype.hasOwnProperty, c = !1; n.exports = function (e, n) { function t(e, n, t, i) { function nrWrapper() { var r, a, f, c; try { a = this, r = o(arguments), f = "function" == typeof t ? t(r, a) : t || {} } catch (u) { l([u, "", [r, a, i], f]) } s(n + "start", [r, a, i], f); try { return c = e.apply(a, r) } catch (p) { throw s(n + "err", [r, a, p], f), p } finally { s(n + "end", [r, a, c], f) } } return r(e) ? e : (n || (n = ""), nrWrapper[a] = e, p(e, nrWrapper), nrWrapper) } function u(e, n, i, o) { i || (i = ""); var a, f, c, u = "-" === i.charAt(0); for (c = 0; c < n.length; c++)f = n[c], a = e[f], r(a) || (e[f] = t(a, u ? f + i : i, o, f)) } function s(t, r, i) { if (!c || n) { var o = c; c = !0; try { e.emit(t, r, i, n) } catch (a) { l([a, t, r, i]) } c = o } } function p(e, n) { if (Object.defineProperty && Object.keys) try { var t = Object.keys(e); return t.forEach(function (t) { Object.defineProperty(n, t, { get: function () { return e[t] }, set: function (n) { return e[t] = n, n } }) }), n } catch (r) { l([r]) } for (var i in e) f.call(e, i) && (n[i] = e[i]); return n } function l(n) { try { e.emit("internal-error", n) } catch (t) { } } return e || (e = i), t.inPlace = u, t.flag = a, t } }, {}] }, {}, ["loader"]);</script>
+    <meta name="viewport" id="viewport-meta" content="width=1024, user-scalable=0, viewport-fit=cover">
+    <script>
+        window.fp_asset_host = "https://content.dragonlearn.in/fp/97";
+    </script>
+    <meta name="google-site-verification" content="VLpVTu9qe8UpJv-pMvigm2z4dfuTJZ_ubdTe5InyYwc">
+    <meta content="https://dragonlearn.in/countries/india/preview_image.png" property="og:image">
+    <meta content="Educational web-site for children based on interactive learning" property="og:title">
+    <meta
+        content="Educational web-site for children based on interactive learning through interesting gamelike exercises"
+        property="og:description">
+    <title>42Study</title>
+
+    <meta name="description"
+        content="Детский образовательный портал для интерактивного обучения детей при помощи интересных игровых заданий и задач.">
+    <!-- minimal content settings -->
+    <link rel="stylesheet" media="all"
+        href="https://content.dragonlearn.in/fp/97/fat_player/super_lib/super_lib-7a457a19bab09821c23430f716215b384ca6afa981467c475ea2758754541880.css">
+    <script
+        src="https://content.dragonlearn.in/fp/97/fat_player/super_lib/super_lib-d214b89ff7fef16ae8274f1c3af7806d4b682336d9d084d622e36d57ee81bcb5.js"></script>
+    <link rel="stylesheet" media="all"
+        href="https://content.dragonlearn.in/fp/97/fat_player/fonts/all-b0da70b78acb00b53176f2e203e8e06177145e7576ccc6a447d3d52f5a4f6544.css">
+    <style>
+        html,
+        body,
+        * {
+            font-family: 'PT Sans' !important;
+        }
+
+        #board.ptf *,
+        #board.ptf *,
+        #answer.ptf *,
+        #answer.ptf * {
+            font-family: 'PT Serif' !important;
+        }
+
+        #board.ptf .cr,
+        #board.ptf .cr *,
+        #answer.ptf .cr,
+        #answer.ptf .cr * {
+            font-family: 'CirceRounded' !important;
+        }
+
+        #board.cr *,
+        #answer.cr * {
+            font-family: 'CirceRounded' !important;
+        }
+
+        #board.cr .ab,
+        #answer.cr .ab,
+        #board.cr .ab>br,
+        #answer.cr .ab>br,
+        #board.cr .ab>span,
+        #answer.cr .ab>span,
+        #board.cr .ab>i,
+        #answer.cr .ab>i,
+        #board.cr .ab>b,
+        #answer.cr .ab>b,
+        #board.cr .ab>em,
+        #answer.cr .ab>em,
+        #board.cr .ab>strong,
+        #answer.cr .ab>strong {
+            font-family: 'CirceRounded-Alt-Bold' !important;
+        }
+
+        #board.cr .ci,
+        #answer.cr .ci,
+        #board.cr .ci>br,
+        #answer.cr .ci>br,
+        #board.cr .ci>span,
+        #answer.cr .ci>span,
+        #board.cr .ci>i,
+        #answer.cr .ci>i,
+        #board.cr .ci>b,
+        #answer.cr .ci>b,
+        #board.cr .ci>em,
+        #answer.cr .ci>em,
+        #board.cr .ci>strong,
+        #answer.cr .ci>strong {
+            font-family: 'Circe' !important;
+        }
+
+        #board.cr .ci.bo,
+        #answer.cr .ci.bo,
+        #board.cr .ci.bo>br,
+        #answer.cr .ci.bo>br,
+        #board.cr .ci.bo>span,
+        #answer.cr .ci.bo>span,
+        #board.cr .ci.bo>i,
+        #answer.cr .ci.bo>i,
+        #board.cr .ci.bo>b,
+        #answer.cr .ci.bo>b,
+        #board.cr .ci.bo>em,
+        #answer.cr .ci.bo>em,
+        #board.cr .ci.bo>strong,
+        #answer.cr .ci.bo>strong {
+            font-family: 'Circe' !important;
+            font-weight: bold !important;
+        }
+    </style>
+    <style>
+        .closedhand {
+            cursor: url("https://content.dragonlearn.in/fp/97/fat_player/cursors/closedhand-d367ee0a4c16c7cebfdbf92c97a72ff63878e7f8be176ac8c5ede75a2265ec52.cur"), pointer !important;
+        }
+    </style>
+    <style>
+        .openhand {
+            cursor: url("https://content.dragonlearn.in/fp/97/fat_player/cursors/openhand-080627fa359156339e79f118fa66a6937f09ff679fe87e8afa473b95c8168d35.cur"), pointer;
+        }
+    </style>
+    <style>
+        .pointerhand {
+            cursor: pointer;
+        }
+    </style>
+    <!--[if gte IE 9]><style type="text/css">.gradient{filter: none !important;}</style><![endif]-->
+    <!-- board -->
+    <style>
+        body.keypaded {
+            padding-bottom: 95px;
+        }
+    </style>
+    <script>
+        I18n = {};
+        I18n.locale = "en";
+        I18n.defaultLocale = "ru";
+        I18n.fallbacks = true;
+        I18n.js_common_beads_progress_drawer_on_terminated = "Reload page to continue.<br>Card has already been opened in another tab.";
+        I18n.js_common_beads_v2_progress_drawer_on_terminated = "Reload page to continue.<br>Card has already been opened in another tab.";
+        I18n.js_common_beads_v3_progress_drawer_on_terminated = "Reload page to continue.<br>Card has already been opened in another tab.";
+        I18n.js_common_beads_v4_progress_drawer_on_terminated = "Reload page to continue.<br>Card has already been opened in another tab.";
+        I18n.js_common_keypad_iwb_2_hacker_hide = "Hide";
+        I18n.js_common_keypad_iwb_2_hacker_show = "Show Smartboard Keyboard";
+        I18n.js_common_progress_drawer_on_terminated = "Reload page to continue.<br>Card has already been opened in another tab.";
+        I18n.j_lab_i18n_js_common_lamps_progress_drawer_more = "Next";
+        I18n.j_lab_i18n_js_common_lamps_progress_drawer_no_tries = "Your tries are over. The task will be available<br>tomorrow. Now try some other tasks.";
+        I18n.j_lab_i18n_js_common_lamps_progress_drawer_no_tries_with_prompt = "Your tries are over.<br>Solve the task with a clue.";
+        I18n.j_lab_i18n_js_common_lamps_progress_drawer_on_terminated = "Reload page to continue.<br>Card has already been opened in another tab.";
+        I18n.j_lab_i18n_js_common_lamps_progress_drawer_one_try = "You've got only one try left.";
+        I18n.j_lab_i18n_js_common_lamps_progress_drawer_to_tasks = "To the tasks";
+        I18n.j_lab_i18n_js_common_lamps_progress_drawer_two_tries = "You've got two tries left.";
+        I18n.j_lab_i18n_js_common_lamps_progress_drawer_wrong = "It's not right!";
+        I18n.js_components_device_rotate_turn_horizontal = "Turn the phone<br>horizontally";
+        I18n.js_components_device_rotate_disable_rotate_block = "Turn off screen rotation lock<br>in phone settings.";
+        I18n.js_components_device_rotate_tap_to_start = "Touch to go to the task";
+    </script>
+    <link rel="stylesheet" media="all"
+        href="https://content.dragonlearn.in/fp/97/fat_player/kafel/beads/v1/kafel-5616680406660da790c5311ea3cd5e2dabef55c592082b6ca6309d33b47e1a32.css">
+    <script
+        src="https://content.dragonlearn.in/fp/97/fat_player/kafel/beads/v1/kafel-1eea03802a985915fe9e88695b5814c5646203b255e38cdc46d770a0e6f66bb7.js"></script>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="gcZz9fdz56OPImmMK49fYJcOPI5D7uh/gNDXlZjGIl8=">
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-92697028-5', 'auto');
+
+        ga("set", "&uid", "teacher-31304");
+        ga('set', 'dimension1', "teacher-31304");
+
+
+        ga('set', 'dimension4', "57199");
+
+
+        ga('send', 'pageview');
+    </script>
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#6ec5e1">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#6ec5e1">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter = new Ya.Metrika({
+                        id: 47316885,
+                        webvisor: true,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                } catch (e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/47316885" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript">
+        //<![CDATA[
+        window.gon = {}; gon.mobileapp_browser = false; gon.allow_mindbox = false;
+//]]>
+    </script>
+
+    <script>        var UCHI_CARDS_ASSET_HOST = "https://content.dragonlearn.in";
+    </script>
+    <script src="https://content.dragonlearn.in/126392/3390/card.js"></script>
+    <link rel="stylesheet" media="screen" href="https://content.dragonlearn.in/126392/3390/card.css">
+    <script>
+        (this.Card && this.Card.play) || (this.Card = Card3390_v126392);
+    </script>
+    <script>
+        var ipc = null;
+        if (Card.Player) {
+            ipc = Card.Player.Ipc;
+        } else if (Card.Player1) {
+            ipc = Card.Player1.Ipc;
+        } else if (Card.Ipc) {
+            ipc = Card.Ipc;
+        }
+        if (ipc) {
+            ipc.prototype.heartbeat = function () { };
+            if (ipc.prototype.on_event) {
+                ipc.prototype.on_event__orig = ipc.prototype.on_event;
+                ipc.prototype.on_event = function (kind, params) {
+                    if (
+                        kind == "$lesson_finish" ||
+                        kind == "$store" ||
+                        kind == "__beads_exercise_finish_succ" ||
+                        kind == "__missed_audio_constant" ||
+                        kind == "__speaker_manager_say_log" ||
+                        kind == "__grade_test_status" ||
+                        kind == "__grade_test_v2_status" ||
+                        kind == "__grade_test_hn_status" ||
+                        kind == "__grade_test_exercise_finish" ||
+                        kind == "__adaptive_start_script" ||
+                        kind == "__adaptive_exercise_finish_succ" ||
+                        kind == "__adaptive_exercise_finish_failed" ||
+                        kind == "__lamps_exercise_finish_succ" ||
+                        kind == "__lamps_exercise_finish_failed" ||
+                        kind == "beads_exercise_finish_failed" ||
+                        kind == "beads_exercise_finish_succ" ||
+                        kind == "beads_exercise_finish_force_succ" ||
+                        kind == "beads_start_script" ||
+                        kind == "lamps_fail" ||
+                        kind == "test_exercise_finish_succ" ||
+                        kind == "test_exercise_finish_failed" ||
+                        kind == "test_start_script" ||
+                        kind == "__grade_test_v2_exercise_finish_succ" ||
+                        kind == "__grade_test_v2_exercise_finish_failed" ||
+                        kind == "__grade_test_v2_start_script" ||
+                        kind == "__grade_test_hn_exercise_finish_succ" ||
+                        kind == "__grade_test_hn_exercise_finish_failed" ||
+                        kind == "__grade_test_hn_start_script" ||
+                        kind == "exercise_start" ||
+                        kind == "english_test_recommend_level" ||
+                        kind == "english_test_review_results" ||
+                        kind == "english_test_introduction_back" ||
+                        kind == "english_test_introduction_start" ||
+                        (([]).indexOf(kind) != -1)
+                    ) {
+                        this.on_event__orig(kind, params);
+                    }
+                }
+            }
+            if (Card.Player) {
+                ipc.prototype.__try_send = function () {
+                    var self = this,
+                        events,
+                        current_hook;
+                    if (self.terminated || self.send_now) {
+                        return;
+                    }
+                    if (self.events.length === 0) {
+                        if (self.after_send_callback) {
+                            self.after_send_callback();
+                        }
+                        self.after_send_callback = null;
+                    } else {
+                        self.send_now = true;
+                        events = self.events;
+                        self.events = [];
+                        console.log("AJAX send: " + JSON.stringify(_(events).map(function (e) { return e.seq_num; })));
+                        current_hook = $.__long_action_hook;
+                        $.__long_action_hook = null;
+                        $.ajax({
+                            url: self.stats_host + "/sessions/" + self.session_id + "/events",
+                            type: "POST",
+                            contentType: "application/json; charset=utf-8",
+                            timeout: 5000,
+                            data: JSON.stringify({ events: events, access_token: self.access_token }),
+                            dataType: "json",
+                            error: function (e) {
+                                console.log("AJAX error");
+                                self.send_now = false;
+                                self.events = events.concat(self.events);
+                                $.delay(5000, function () {
+                                    self.__try_send();
+                                });
+                            },
+                            success: function (data) {
+                                self.send_now = false;
+                                if (data.status === "ok") {
+                                    self.__try_send();
+                                } else if (data.status === "no_free_beads_left" && data.redirect_to !== null) {
+                                    if (self.cardFinish) {
+                                        self.__try_send();
+                                        return;
+                                    }
+                                    self.terminated = true;
+                                    window.location = data.redirect_to;
+                                } else if (data.status === "session_completed") {
+                                    if (self.cardFinish) {
+                                        self.__try_send();
+                                        return;
+                                    }
+                                    self.terminated = false;
+                                } else {
+                                    self.terminated = true;
+                                    self.on_access_denied();
+                                }
+                            }
+                        });
+                        $.__long_action_hook = current_hook;
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        (function () {
+            try {
+                var SPEAKER_MANAGER_SAY_LOG_SIGNAL = "__speaker_manager_say_log";
+                var content_card_id = 3390;
+                var version = 126392;
+                var card = window.Card;
+                var SignalListener = null;
+                if (card && card.Player1) {
+                    SignalListener = card.Player1.SignalListener;
+                }
+                (function () {
+                    if (SignalListener) {
+                        if (SignalListener.prototype.on_event == null) return;
+                        SignalListener.prototype.__HACK__speaker_manager__HACK__on_event__orig = SignalListener.prototype.on_event;
+                        SignalListener.prototype.on_event = function (signal_name, options) {
+                            // ignore some signals
+                            if (signal_name === SPEAKER_MANAGER_SAY_LOG_SIGNAL) return;
+                            this.__HACK__speaker_manager__HACK__on_event__orig.apply(this, arguments);
+                        };
+                    }
+                }());
+                var SpeakerManager = null;
+                if (card && card.Player1) {
+                    SpeakerManager = card.Player1.SpeakerManager;
+                }
+                if (SpeakerManager) {
+                    if (SpeakerManager.prototype.say == null) return;
+                    SpeakerManager.prototype.__HACK__speaker_manager__HACK__say__orig = SpeakerManager.prototype.say;
+                    SpeakerManager.prototype.say = function (_label, _opt, _cb) {
+                        // dont mutate arguments
+                        var label = _label;
+                        var opt = _opt;
+                        var cb = _cb;
+                        // do hack
+                        try {
+                            if (opt == null) opt = {};
+                            if (cb == null && typeof opt === "function") {
+                                cb = opt; opt = {};
+                            }
+                            var sound = null;
+                            if (this.audio_manager) {
+                                sound = this.audio_manager.sound(label, { option: opt.option });
+                            }
+                            var text = (function () {
+                                try {
+                                    return card.Player1.__i18n_t(this.script_name, label, opt.args, this.locale);
+                                } catch (e) { }
+                            }).call(this);
+                            var speech = (function () {
+                                try {
+                                    return card.Player1.__i18n_s(this.script_name, label, opt.args, this.locale);
+                                } catch (e) { }
+                            }).call(this);
+                            var data = {
+                                locale: this.locale,
+                                content_card_id: content_card_id,
+                                version: version,
+                                script_name: this.script_name,
+                                label: label, option: opt.option,
+                                args: opt.args,
+                                text: text,
+                                speech: speech,
+                                audio_present: !!sound
+                            };
+                            console.log(data);
+                            var tutor = null;
+                            if (card && card.Player1 && card.Player1.__score) {
+                                tutor = card.Player1.__score.tutor;
+                            }
+                            if (tutor && tutor._sys_event) {
+                                tutor._sys_event(SPEAKER_MANAGER_SAY_LOG_SIGNAL, data);
+                            }
+                        }
+                        catch (e) {
+                            console.log("[speaker_manager_binary_hack] hack crashed");
+                            console.log(e);
+                            console.log(e && e.name);
+                            console.log(e && e.message);
+                            console.log(e && e.stack);
+                        }
+                        // call original method
+                        this.__HACK__speaker_manager__HACK__say__orig.apply(this, arguments);
+                    }
+                }
+            }
+            catch (e) {
+                console.log("[speaker_manager_binary_hack] hack crashed");
+                console.log(e);
+                console.log(e && e.name);
+                console.log(e && e.message);
+                console.log(e && e.stack);
+            }
+        }());
+    </script>
+
+    <style>
+        #intercom-frame {
+            opacity: 1 !important;
+            overflow: visible !important
+        }
+    </style>
+    <style>
+        #intercom-frame {
+            opacity: 1 !important;
+            overflow: visible !important
+        }
+    </style>
+    <style>
+        #intercom-frame {
+            opacity: 1 !important;
+            overflow: visible !important
+        }
+    </style>
+</head>
+
+<body class="chrome platform_windows no-touch keypaded" data-gr-c-s-loaded="true">
+    <div style="width:0;height:0;overflow:hidden">
+        <span style="font-family:'Noto Sans' !important">.</span>
+        <span style="font-family:'Noto Sans' !important;font-weight: bold !important">.</span>
+        <span style="font-family:'Noto Sans' !important;font-style: italic !important">.</span>
+        <span
+            style="font-family:'Noto Sans' !important;font-style: italic !important;font-weight: bold !important">.</span>
+        <span style="font-family:'PT Sans' !important">.</span>
+        <span style="font-family:'PT Serif' !important">.</span>
+        <span style="font-family:'CirceRounded' !important">.</span>
+        <span style="font-family:'CirceRounded' !important;font-weight: bold !important">.</span>
+        <span style="font-family:'CirceRounded-Regular' !important">.</span>
+        <span style="font-family:'CirceRounded-Alt-Bold' !important">.</span>
+        <span style="font-family:'Circe' !important">.</span>
+        <span style="font-family:'Circe' !important;font-weight: bold !important">.</span>
+        <span style="font-family:'Circe-Regular' !important">.</span>
+        <span style="font-family:'Circe-Bold' !important">.</span>
+        <span style="font-family:'DejaVu Sans' !important">.</span>
+        <span style="font-family:'Neucha' !important">.</span>
+    </div>
+
+    <div class="uchiru_bg_cell"></div>
+    <div class="uchiru_bg_color"></div>
+    <div class="uchiru_bg_stuff"></div>
+    <img class="uchiru_bg_color"
+        src="https://content.dragonlearn.in/fp/97/fat_player/student/grad-f07e854ce64f9aee2db7bd67146ff0e4800feeed40c8f7116fcb3b6a048deb64.jpg">
+    <div class="uchiru_box">
+        <div class="uchiru_head card with_progress">
+            <a class="back-link" style="" href="/stage1.html">
+                <div class="arrow-left"></div>
+                <span>Back</span>
+            </a>
+            <div class="uchiru-head__right-group">
+            </div>
+            <div class="beads-wrapper">
+                <div id="progress">
+                    <div class="inner_progress"><i class="az_ball_0" id="bead0" style="left: 4px;"></i><i
+                            class="az_ball_1" id="bead1" style="left: 28px;"></i><i class="az_ball_2" id="bead2"
+                            style="left: 52px;"></i><i class="az_ball_3" id="bead3" style="left: 76px;"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card_content">
+            <script>
+                $(function () {
+                    try {
+                        var KeypadManager = UchiruKeypad3.KeypadManager,
+                            Series = ((function () {
+                                var module = {};
+                                (function (module) {
+                                    var Series = (function () {
+                                        function Series() {
+                                            this._middleware = [];
+                                            this._i = 0;
+                                        }
+                                        Series.prototype.use = function (fn) {
+                                            this._middleware.push(fn)
+                                        };
+                                        Series.prototype.run = function () {
+                                            this._i = 0;
+                                            var func = null;
+                                            var args = Array.prototype.slice.call(arguments)
+                                                .concat(function () {
+                                                    this._i += 1;
+                                                    return func();
+                                                }.bind(this));
+                                            func = (function () {
+                                                if (!(this._i < this._middleware.length)) {
+                                                    return;
+                                                }
+                                                var fn = this._middleware[this._i];
+                                                fn.apply(null, args);
+                                            }).bind(this);
+                                            return func();
+                                        }
+                                        return Series;
+                                    })();
+                                    module.exports = Series;
+                                })(module);
+                                return module.exports;
+                            })()),
+                            place = $("#board"),
+                            progress = $("#progress"),
+                            interbeads_congrat = Card.__meta.supports.interbeads_congrat,
+                            interbeads_congrat_no_text = Card.__meta.supports.interbeads_congrat_no_text ? true : false,
+                            ProgressDrawerKlass = BeadsProgressDrawer,
+                            uchiruKeypad3Manager = new KeypadManager(place, {
+                                locale: "en",
+                                show_keypad_on_desktop: false
+                            }),
+                            beads_drawer;
+                        beads_drawer = new ProgressDrawerKlass(place, progress, '/stage3.html', { interbeads_congrat: interbeads_congrat, interbeads_congrat_no_text: interbeads_congrat_no_text });
+                        var keypadIWB2Hacker = null;
+                        var iwbHackOnEvents = function (event, options, next) {
+                            if (event == 'lesson_start') {
+                                iwb_2_position = Cookies.get('__31304__iwb_2_position');
+                                iwb_2_state = Cookies.get('__31304__iwb_2_state');
+                                keypadIWB2Hacker = new KeypadIWB2Hacker(keypad_manager, place.parent(), {
+                                    interactive_whiteboard_2: {
+                                        position: iwb_2_position,
+                                        state: iwb_2_state,
+                                        on_position_changed: function (position) { Cookies.set('__31304__iwb_2_position', position, { expires: 365 }); },
+                                        on_state_changed: function (state) { Cookies.set('__31304__iwb_2_state', state, { expires: 365 }); }
+                                    }
+                                });
+                                keypadIWB2Hacker.hack();
+                            } else if (event == 'lesson_finish') {
+                                if (keypadIWB2Hacker) {
+                                    keypadIWB2Hacker.destroy();
+                                    keypadIWB2Hacker = null;
+                                }
+                            }
+                            next();
+                        };
+                        var uchiruKeypad3ManagerOnEvents = function (event, options, next) {
+                            uchiruKeypad3Manager.onEvents(event, options);
+                            next();
+                        };
+                        var cardOnEvents = function (event, options, next) {
+                            if (event == '__back') {
+                                window.location = '/stage1.html';
+                                return;
+                            }
+                            next();
+                        };
+                        var beadsDrawerOnEvents = function (event, options, next) {
+                            beads_drawer.on_beads(event, options);
+                            next();
+                        };
+                        var eventSeries = new Series();
+                        var main = function () {
+                            eventSeries.use(iwbHackOnEvents);
+                            eventSeries.use(uchiruKeypad3ManagerOnEvents);
+                            eventSeries.use(cardOnEvents);
+                            eventSeries.use(beadsDrawerOnEvents);
+                        };
+                        var middleware = (((function () {
+                            var module = {};
+                            (function (module) { })(module);
+                            return module.exports;
+                        })())) || function (eventSeries, next) { next(); };
+                        middleware(eventSeries, main);
+                        var Player = ((function () {
+                            var module = {};
+                            (function (module) {
+                                var Player;
+                                if (!Card.__meta || !Card.__meta["player"] || Card.__meta["player"] === "/players/player_1") {
+                                    Player = Card.Player1;
+                                } else if (Card.__meta["player"] === "/players/player-iframe-dynamic") {
+                                    Player = Card.PlayerIFrameDynamic;
+                                } else if (Card.__meta["player"] === "/players/player-iframe") {
+                                    Player = Card.PlayerIFrame;
+                                } else if (Card.__meta["player"] === "/players/player-1") {
+                                    Player = Card.Player1;
+                                }
+                                module.exports = Player;
+                            })(module);
+                            return module.exports;
+                        })());
+                        if (!Card.Player) Card.Player = Player;
+                        Card.Messaging && Card.Messaging.run();
+                        var playCard = function (opt) {
+                            if (opt == null) { opt = {} };
+                            Card.play(place, "https://content.dragonlearn.in", $.extend({ "content_card_id": 3390, "version": 126392, "script_versions": null, "websolver": { "request_url": "https://websolver.dragonlearn.in" } }, {
+                                on_beads: function (event, options) {
+                                    eventSeries.run(event, options);
+                                },
+                                locale: "en"
+                                , register_keypad_manager_in_global_space: true
+                            }, opt.playOptions));
+                        };
+                        if (!window.FatPlayer) { window.FatPlayer = {} };
+                        FatPlayer.playCard = playCard;
+                        FatPlayer.playCard();
+                    }
+                    catch (err) {
+                        (function () {
+                            var main = function () { throw err; };
+                            var middleware = (((function () {
+                                var module = {};
+                                (function (module) { })(module);
+                                return module.exports;
+                            })())) || function (err, next) { next(); };
+                            middleware(err, main);
+                        }());
+                    }
+                });
+            </script>
+            <div id="board" class="uchiru-place card player-1 script3821 fixed run_on_windows cr"
+                style="line-height: 1.29;">
+                <div class="scene windows under_start">
+                    <div class="grid">
+                        <div class="grid_part vertical_grid">
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    1</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    2</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    2</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    3</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    3</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    4</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    4</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    5</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    5</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    6</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    6</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    7</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    7</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    8</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    8</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    9</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    9</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    10</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    10</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    11</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    11</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    12</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    12</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    13</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    13</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    14</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    14</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    15</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    15</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    16</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    16</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    17</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    17</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    18</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    18</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    19</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    19</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    20</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    20</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    21</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    21</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    22</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    22</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    23</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    23</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    24</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    24</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    25</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    25</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    26</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    26</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    27</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    27</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    28</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    28</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    29</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    29</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    30</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    30</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    31</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    31</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    32</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    32</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    33</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    33</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    34</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    34</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    35</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    35</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    36</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    36</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    37</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    37</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    38</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    38</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    39</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    39</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    40</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    40</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    41</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    41</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    42</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    42</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    43</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    43</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    44</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    44</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    45</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    45</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    46</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; top: 520px;">
+                                    46</div>
+                            </div>
+                            <div class="grid_column" style="width: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    47</div>
+                            </div>
+                        </div>
+                        <div class="grid_part horizontal_grid">
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    1</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    2</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    2</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    3</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    3</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    4</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    4</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    5</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    5</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    6</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    6</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    7</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    7</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    8</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    8</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    9</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    9</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    10</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    10</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    11</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    11</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    12</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    12</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    13</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    13</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    14</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    14</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    15</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    15</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    16</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    16</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    17</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    17</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    18</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    18</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    19</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    19</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    20</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    20</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    21</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    21</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    22</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    22</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    23</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    23</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    24</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    24</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    25</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    25</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    26</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    26</div>
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px; position: absolute; right: 0px;">
+                                    27</div>
+                            </div>
+                            <div class="grid_row" style="height: 20px;">
+                                <div class="grid_cell"
+                                    style="color: rgb(153, 153, 153); width: 20px; text-align: center; line-height: 20px;">
+                                    27</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task">Choose and simplify one of the fractions</div>
+                    <div class="toast" style="top: 92px; left: 267px;">
+                        <div class="toast__input blank toast__input_transparent">
+                            <div class="_fraction">
+                                <div class="input_classic_submit _fraction__numerator blank">
+                                    <div class="input-body _win32 _centered" style="width: 44px;">
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__digit">3</div>
+                                        <div class="input-body__carriage"></div>
+                                    </div>
+                                </div>
+                                <div class="_fraction__fraction-line"></div>
+                                <div class="input_classic_submit _fraction__denominator blank">
+                                    <div class="input-body _win32 _centered" style="width: 44px;">
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__digit">5</div>
+                                        <div class="input-body__carriage"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toast" style="top: 92px; left: 419px;">
+                        <div class="toast__input blank toast__input_transparent">
+                            <div class="_fraction">
+                                <div class="input_classic_submit _fraction__numerator blank">
+                                    <div class="input-body _win32 _centered" style="width: 44px;">
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__digit">3</div>
+                                        <div class="input-body__carriage"></div>
+                                    </div>
+                                </div>
+                                <div class="_fraction__fraction-line"></div>
+                                <div class="input_classic_submit _fraction__denominator blank">
+                                    <div class="input-body _win32 _centered" style="width: 44px;">
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__digit">9</div>
+                                        <div class="input-body__carriage"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toast" style="top: 92px; left: 571px;">
+                        <div class="toast__input blank toast__input_transparent">
+                            <div class="_fraction">
+                                <div class="input_classic_submit _fraction__numerator blank">
+                                    <div class="input-body _win32 _centered" style="width: 44px;">
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__digit">1</div>
+                                        <div class="input-body__carriage"></div>
+                                    </div>
+                                </div>
+                                <div class="_fraction__fraction-line"></div>
+                                <div class="input_classic_submit _fraction__denominator blank">
+                                    <div class="input-body _win32 _centered" style="width: 44px;">
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__digit">3</div>
+                                        <div class="input-body__carriage"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-basic button-basic_font_ci button-basic_case_uc button-basic_color_blue button-done disabled"
+                        style="left: 50%; margin-left: -48.5px;">
+                        <div class="button-basic__placeholder" style="visibility: hidden;">
+                            <div class="button-basic__placeholder_inner ci">Done</div>
+                        </div>
+                        <div class="button-basic__wrong"></div>
+                        <div class="button-basic__right"></div>
+                        <div class="button-basic__text">
+                            <div class="button-basic__text_inner ci">Done</div>
+                        </div>
+                    </div>
+                    <div class="capture_region">
+                        <div class="toaster"></div>
+                        <div class="toaster__back_panel"></div>
+                        <div class="toaster__sign_equal">=</div>
+                        <div class="hand hand_on toaster__hand hand__is_on">
+                            <div class="hint" style="left: -21px; top: 22px; opacity: 0;">
+                                <div class="hint_content" style="right: 0px; top: -38px;">You can change the fraction
+                                </div>
+                                <div class="corner" style="left: 0px; top: -15px;">
+                                    <div class="corner-inner" style="left: -8px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toast toaster__toast" style="top: 1px; left: 176px;">
+                            <div class="toast__input blank toast__input_transparent">
+                                <div class="_fraction">
+                                    <div class="input_classic_submit _fraction__numerator blank">
+                                        <div class="input-body _win32 _centered" style="width: 44px;">
+                                            <div class="input-body__digit _empty">&nbsp;</div>
+                                            <div class="input-body__digit">1</div>
+                                            <div class="input-body__carriage"></div>
+                                        </div>
+                                    </div>
+                                    <div class="_fraction__fraction-line"></div>
+                                    <div class="input_classic_submit _fraction__denominator blank">
+                                        <div class="input-body _win32 _centered" style="width: 44px;">
+                                            <div class="input-body__digit _empty">&nbsp;</div>
+                                            <div class="input-body__digit">3</div>
+                                            <div class="input-body__carriage"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hint_formal_answer" style="left: 143px; top: 69px;">
+                                <div class="hint_content" style="left: 0px; top: -66px;">For a simplified
+                                    fraction<br>the denominator and <br>the numerator should be<br>smaller</div>
+                                <div class="corner" style="right: 0px; top: -15px;">
+                                    <div class="corner-inner" style="left: 23px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toast__input disabled toaster_input">
+                            <div class="_fraction">
+                                <div class="input_classic_submit disabled _fraction__numerator">
+                                    <div class="input-body _win32 _centered" style="width: 44px;">
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__carriage"></div>
+                                    </div>
+                                </div>
+                                <div class="_fraction__fraction-line"></div>
+                                <div class="input_classic_submit disabled _fraction__denominator">
+                                    <div class="input-body _win32 _centered" style="width: 44px;">
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__digit _empty">&nbsp;</div>
+                                        <div class="input-body__carriage"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toaster__slot"></div>
+                    </div>
+                    <div class="btn_play_wall"></div>
+                </div>
+                <div class="btn_play">
+                    <div class="triangle"><span>start</span></div>
+                </div>
+            </div>
+            <div class="keypad-iwb-2-hacker keypad-iwb-2-hacker-right keypad-iwb-2-hacker-hide">
+                <div class="keypad_buttons_holder">
+                    <div class="keypad_button keypad_button_1">1</div>
+                    <div class="keypad_button keypad_button_2">2</div>
+                    <div class="keypad_button keypad_button_3">3</div>
+                    <div class="keypad_button keypad_button_4">4</div>
+                    <div class="keypad_button keypad_button_5">5</div>
+                    <div class="keypad_button keypad_button_6">6</div>
+                    <div class="keypad_button keypad_button_7">7</div>
+                    <div class="keypad_button keypad_button_8">8</div>
+                    <div class="keypad_button keypad_button_9">9</div>
+                    <div class="keypad_button keypad_button_0">0</div>
+                    <div class="keypad_button keypad_button_plus">&nbsp;</div>
+                    <div class="keypad_button keypad_button_minus">&nbsp;</div>
+                    <div class="keypad_button keypad_button_multiply">&nbsp;</div>
+                    <div class="keypad_button keypad_button_divide">&nbsp;</div>
+                    <div class="keypad_button keypad_button_backspace">&nbsp;</div>
+                    <div class="keypad_button keypad_button_enter">OK</div>
+                </div>
+                <div class="keypad-move">&nbsp;</div>
+                <div class="keypad-showhide">Show Smartboard Keyboard</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/students_new/autologout-helper-ad0a3047eb207b1036bdd8271c02f7ec.js"></script>
+
+
+    <script id="IntercomSettingsScriptTag">
+        window.intercomSettings = { "email": "thedblaster@gmail.com", "name": "Lê", "created_at": 1585017771, "user_id": 31304, "parent": false, "parent2": false, "middle_name": "", "last_name": "Duy", "payments_count": 0, "premium_ends_at": null, "last_student_login": null, "trial_locks": 0, "students_count": 1, "active_students_count": null, "active_students_percentage": 0, "student_logins_count": 0, "boarding_state": "completed", "child_cards_completed": 0, "uchi_ru_id": true, "students_50_current": 0, "students_100_current": 0, "start_students_current": 0, "students_5_cards_current": 0, "students_50": 0, "students_100": 0, "start_students": 0, "students_5_cards": 0, "groups_count": 1, "grade_0": false, "grade_1": false, "grade_2": false, "grade_3": false, "grade_4": false, "grade_5": false, "grade_6": false, "grade_7": false, "has_subscription": false, "has_trial_march_2017_olympiad": null, "has_main_march_2017_olympiad": null, "user_hash": "ed4fe46bf4c86a1c0c5f1cef7295756dcdebcabee3c9e621c84d85135571c7fb", "app_id": "can2sb5p" };
+    </script>
+    <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/can2sb5p'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } }; })()</script>
+
+
+    <iframe id="intercom-frame"
+        style="position: absolute !important; opacity: 1; width: 1px !important; height: 1px !important; top: 0px !important; left: 0px !important; border: none !important; display: block !important; z-index: -1 !important; overflow: visible;"
+        aria-hidden="true" tabindex="-1" title="Intercom" __idm_frm__="685"></iframe>
+    <div id="intercom-container" class="intercom-namespace">
+        <style>
+            html.intercom-mobile-messenger-active,
+            html.intercom-mobile-messenger-active>body,
+            html.intercom-modal-open,
+            #intercom-container-body {
+                overflow: hidden !important;
+            }
+
+            html.intercom-mobile-messenger-active,
+            html.intercom-mobile-messenger-active>body {
+                position: static !important;
+            }
+
+            html.intercom-mobile-messenger-active>body {
+                height: 0 !important;
+                margin: 0 !important;
+            }
+
+            iframe#intercom-frame {
+                position: absolute !important;
+                opacity: 0 !important;
+                width: 1px !important;
+                height: 1px !important;
+                top: 0 !important;
+                left: 0 !important;
+                border: none !important;
+                display: block !important;
+                z-index: -1 !important;
+            }
+        </style>
+        <div class="intercom-app" aria-live="polite">
+            <div id="intercom-modal-container"></div>
+        </div>
+    </div>
+    <div id="intercom-css-container">
+        <style data-emotion="intercom-global"></style>
+    </div>
+    <div id="eJOY__extension_root" style="all: unset;"></div>
+</body>
+
+</html>
