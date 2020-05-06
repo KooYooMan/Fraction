@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d97856cd207099e38cf3e75bdb43f784",
+    "revision": "11993d241c85e84e1340cd7c523d8fca",
     "url": "/Fraction/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fraction/static/css/2.3b6f1bda.chunk.css"
   },
   {
-    "revision": "8c4cd493e82b680412f8",
-    "url": "/Fraction/static/css/main.ab920ae5.chunk.css"
+    "revision": "b4a86e9b5058e5b42a26",
+    "url": "/Fraction/static/css/main.ea48aa76.chunk.css"
   },
   {
     "revision": "6da35c9788bd04a5619e",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fraction/static/js/2.b64d1139.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8c4cd493e82b680412f8",
-    "url": "/Fraction/static/js/main.4f2ead51.chunk.js"
+    "revision": "b4a86e9b5058e5b42a26",
+    "url": "/Fraction/static/js/main.f3766110.chunk.js"
   },
   {
     "revision": "8e507ee2d00f2c835292",
