@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Fraction/static/css/main.ea48aa76.chunk.css",
-    "main.js": "/Fraction/static/js/main.f3766110.chunk.js",
-    "main.js.map": "/Fraction/static/js/main.f3766110.chunk.js.map",
+    "main.js": "/Fraction/static/js/main.74775d12.chunk.js",
+    "main.js.map": "/Fraction/static/js/main.74775d12.chunk.js.map",
     "runtime-main.js": "/Fraction/static/js/runtime-main.658853f0.js",
     "runtime-main.js.map": "/Fraction/static/js/runtime-main.658853f0.js.map",
     "static/css/2.3b6f1bda.chunk.css": "/Fraction/static/css/2.3b6f1bda.chunk.css",
-    "static/js/2.b64d1139.chunk.js": "/Fraction/static/js/2.b64d1139.chunk.js",
-    "static/js/2.b64d1139.chunk.js.map": "/Fraction/static/js/2.b64d1139.chunk.js.map",
+    "static/js/2.a9be795d.chunk.js": "/Fraction/static/js/2.a9be795d.chunk.js",
+    "static/js/2.a9be795d.chunk.js.map": "/Fraction/static/js/2.a9be795d.chunk.js.map",
     "index.html": "/Fraction/index.html",
-    "precache-manifest.efe51f9758793bae943587278d8c88f8.js": "/Fraction/precache-manifest.efe51f9758793bae943587278d8c88f8.js",
+    "precache-manifest.2c05af5c0364a6ad12fa4b7998d79772.js": "/Fraction/precache-manifest.2c05af5c0364a6ad12fa4b7998d79772.js",
     "service-worker.js": "/Fraction/service-worker.js",
     "static/css/2.3b6f1bda.chunk.css.map": "/Fraction/static/css/2.3b6f1bda.chunk.css.map",
     "static/css/main.ea48aa76.chunk.css.map": "/Fraction/static/css/main.ea48aa76.chunk.css.map",
-    "static/js/2.b64d1139.chunk.js.LICENSE.txt": "/Fraction/static/js/2.b64d1139.chunk.js.LICENSE.txt"
+    "static/js/2.a9be795d.chunk.js.LICENSE.txt": "/Fraction/static/js/2.a9be795d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.658853f0.js",
     "static/css/2.3b6f1bda.chunk.css",
-    "static/js/2.b64d1139.chunk.js",
+    "static/js/2.a9be795d.chunk.js",
     "static/css/main.ea48aa76.chunk.css",
-    "static/js/main.f3766110.chunk.js"
+    "static/js/main.74775d12.chunk.js"
   ]
 }
