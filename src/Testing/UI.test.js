@@ -29,7 +29,7 @@ describe('UI debug testing', () => {
     it ('student ending screen', () => {
         const component = render(
         <Provider store={store}>
-            <StudentEnding debug />
+            <StudentEnding />
         </Provider>)
         expect(component).toMatchSnapshot()
     });

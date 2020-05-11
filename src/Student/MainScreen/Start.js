@@ -22,7 +22,7 @@ class Start extends React.Component {
             <div id="board" className="uchiru-place card player-1 script3771 fixed run_on_windows cr" style={{ lineHeight: '1.29' }}>
               <div className="btn_play">
                 <button 
-                  style={{ border: "none", padding: 0, background: "none" }} 
+                  style={{ border: "none", padding: 0, background: "none", width: '100%', height: '100%' }} 
                   id="button-start-mainscreen" 
                   onClick={this.props.nextScreen}
                 >
