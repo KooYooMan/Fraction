@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1597ab2452aa1a5a7eb853a3584d8df9",
+    "revision": "8ed57d659a695f04e3881d0067beee07",
     "url": "/Fraction/index.html"
   },
   {
-    "revision": "62f083d943cb72192474",
+    "revision": "c170301c3fbe9eaf0060",
     "url": "/Fraction/static/css/2.3b6f1bda.chunk.css"
   },
   {
-    "revision": "52dc4a182ef2615f8d3d",
+    "revision": "15960cacd08a54f6c7b7",
     "url": "/Fraction/static/css/main.ea48aa76.chunk.css"
   },
   {
-    "revision": "62f083d943cb72192474",
-    "url": "/Fraction/static/js/2.a9be795d.chunk.js"
+    "revision": "c170301c3fbe9eaf0060",
+    "url": "/Fraction/static/js/2.286df240.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Fraction/static/js/2.a9be795d.chunk.js.LICENSE.txt"
+    "url": "/Fraction/static/js/2.286df240.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "52dc4a182ef2615f8d3d",
-    "url": "/Fraction/static/js/main.74775d12.chunk.js"
+    "revision": "15960cacd08a54f6c7b7",
+    "url": "/Fraction/static/js/main.ed5c8055.chunk.js"
   },
   {
     "revision": "8e507ee2d00f2c835292",
