@@ -5,10 +5,14 @@ const initialState = Map({
     screen: 0,
     listQuestion: List([{
         id: 1,
+        numerator: 1,
+        denominator: 4
+    },{
+        id: 2,
         numerator: 60,
         denominator: 96
     },{
-        id: 2,
+        id: 3,
         numerator: 75,
         denominator: 100
     }])

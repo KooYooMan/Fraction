@@ -49,8 +49,7 @@ class GreenBead extends React.Component {
     }
 
     render() {
-        console.log('hello', this.state.display)
-        return (
+         return (
             <div className="inner_progress">
                 {this.state.display}
             </div>

@@ -16,8 +16,6 @@ class StepByStep extends React.Component {
             screen: this.props.screen
         }
         this.updateScreen = this.updateScreen.bind(this);
-
-        console.log(props);
     }
 
     updateScreen() {
@@ -26,9 +24,9 @@ class StepByStep extends React.Component {
         })
     }
 
-    componentWillReceiveProps(){
+    componentWillReceiveProps(nextProps){
         this.setState({
-            screen: this.props.screen
+            screen: nextProps.screen
         })
     }
 
@@ -39,25 +37,12 @@ class StepByStep extends React.Component {
             case this.props.listQuestion.length + 1:
                 return <Ending />
             default:
-                return <Transition
-                    from={{ opacity: 0}}
-                    enter={{ opacity: 1 }}
-                    leave={{ opacity: 0 }}
-                    config={{duration: 0}}
-                    items = {this.state.screen}
-                >{
-                    show => show ? props => <Form 
-                    numerator = {this.props.listQuestion[this.state.screen - 1].numerator}
-                    denominator = {this.props.listQuestion[this.state.screen - 1].denominator}
+                return <Form 
+                    screen = {this.state.screen}
+                    listQuestion = {this.props.listQuestion}
                     mainScreen = {() => {this.props.mainScreen()}}
-                    screen = {this.state.screen - 1}
-                    length = {this.props.listQuestion.length}
                     updateScreen = {() => this.updateScreen()}
                 />
-                : props => <div></div>
-                }
-                    
-                </Transition>
         }
     }
 }

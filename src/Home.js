@@ -56,7 +56,7 @@ class Home extends React.Component {
                                                         </button>
                                                     </Link>
                                                 </div>
-                                                <h2><b>Học Sinh</b></h2>
+                                                <h2><b>Học sinh</b></h2>
                                                 <div className="column-desc">Bạn có thể làm các bài kiểm tra</div>
                                             </div>
                                             <div className="row invite-row">
