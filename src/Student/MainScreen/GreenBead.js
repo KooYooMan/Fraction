@@ -49,7 +49,7 @@ class GreenBead extends React.Component {
     }
 
     render() {
-        return (
+         return (
             <div className="inner_progress">
                 {this.state.display}
             </div>

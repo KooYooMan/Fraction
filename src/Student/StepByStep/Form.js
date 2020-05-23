@@ -2,6 +2,8 @@ import React from 'react';
 import Ending from '../MainScreen/Ending';
 import GamePlay from './GamePlay';
 import {Transition, animated} from 'react-spring/renderprops';
+import GreenBead from '../MainScreen/GreenBead'
+import Exam from './Exam'
 
 function gcd_two_numbers(x, y) {
   while(y) {
@@ -16,72 +18,24 @@ function gcd_two_numbers(x, y) {
 class Form extends React.Component {
   constructor(props) {
     super(props);
-
-    let x = this.props.numerator;
-    let y = this.props.denominator;
-    let g = gcd_two_numbers(x, y);
-
-    let stages = [];
-
-    for(let i = 2; i <= g; ++i) {
-      while (g % i === 0) {
-        let first = 1; while(g % first === 0) ++first;        
-        let second = first + 1; while(g % second === 0) ++second;
-        var newStage = {
-          numerator: x,
-          denominator: y,
-          answers: [i, first, second]
-        }
-
-        stages = stages.concat(newStage);
-        x /= i;
-        y /= i;
-        g /= i;
-      }
-    }
-
-
-    stages = stages.concat({
-      numerator: x,
-      denominator: y,
-      answers: [2, 3, 5]
-    });
     this.state = {
-      curStage: 1,
-      stages: stages
-    };
-  }
-
-
-  componentDidMount() {
-    console.log(this.props);
-
-
-    // for(let i = 0; i < stages.length; ++i) {
-    //   if(Math.random() * 10 <= 5) {
-    //     let temp = stages[i].answers[0];
-    //     stages[i].answers[0] = stages[i].answers[1];
-    //     stages[i].answers[1] = temp;
-    //   }
-    // }
-
-  }
-
-  changeState() {
-    if(this.state.curStage == this.state.stages.length) {
-      return this.props.updateScreen();
+      screen: 1
     }
-    this.setState({
-      curStage: this.state.curStage + 1
-    });
+
+    this.updateScreen = this.updateScreen.bind(this)
+
   }
 
+  updateScreen() {
+    this.props.updateScreen();
+    this.setState({
+      screen: this.state.screen + 1
+    })
+  }
 
     render(){
       return (
-        (this.state.curStage > this.state.stages.length) ? 
-        (<div></div>) 
-        :(<div>
+        <div>
           <meta charSet="utf-8" />
           <meta name="viewport" id="viewport-meta" content="width=1024, user-scalable=0, viewport-fit=cover" />
           <meta name="google-site-verification" content="VLpVTu9qe8UpJv-pMvigm2z4dfuTJZ_ubdTe5InyYwc" />
@@ -158,7 +112,8 @@ class Form extends React.Component {
               </a>
               <div className="beads-wrapper">
                   <div id="progress">
-                      <span>Đã hoàn thành {this.props.screen} / {this.props.length}</span>
+                      {/* <span>Đã hoàn thành {this.props.screen} / {this.props.length}</span> */}
+                    <GreenBead len = {this.props.listQuestion.length} screen = {this.props.screen - 1}  />
                   </div>
               </div>
               <div className="uchiru-head__right-group">
@@ -167,26 +122,25 @@ class Form extends React.Component {
             
             <div className="card_content">
               <div id="board" className="uchiru-place card player-1 script3811 fixed cr" style={{lineHeight: '1.29'}}>
-              
-              <Transition
-                items={this.state.curStage}
-                from={{position:'absolute', opacity : 0}}
-                enter={{opacity: 1}}
-                leave={{opacity: 0}}
-                config={{duration: 750}}
-              >
-                {show => show && (props => (
-                  <animated.div style={props}>
-                    <GamePlay 
-                      denominator = {this.state.stages[this.state.curStage - 1].denominator}
-                      numerator = {this.state.stages[this.state.curStage - 1].numerator}
-                      answers = {this.state.stages[this.state.curStage - 1].answers}
-                      continueGame = {() => this.changeState()}
-                    ></GamePlay>
-                  </animated.div>
-                ))}
-              </Transition>
+                <Transition
+                  from={{ opacity: 0}}
+                  enter={{ opacity: 1 }}
+                  leave={{ opacity: 0 }}
+                  config={{duration: 0}}
+                  items = {this.state.screen}
+                >
+                {
+                  show => show ? props => <Exam
+                    numerator = {this.props.listQuestion[this.state.screen - 1].numerator}
+                    denominator = {this.props.listQuestion[this.state.screen - 1].denominator}
+                    updateScreen = {() => this.updateScreen()}
+                  >
 
+                  </Exam>
+
+                  : props => <div></div>
+                }
+                </Transition>
               </div>
             </div>
           </div>
@@ -202,8 +156,8 @@ class Form extends React.Component {
             <style data-emotion="intercom-global" dangerouslySetInnerHTML={{__html: "" }} />
           </div>
         </div>
-      ));
-    }
+      );
+    } 
   };
 
   export default Form;
