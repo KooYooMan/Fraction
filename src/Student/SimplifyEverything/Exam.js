@@ -132,17 +132,11 @@ class Exam extends React.Component {
 
                 <div className="beads-wrapper">
                   <div id="progress">
-                    <GreenBead
-                      screen={0}
-                      len={0}
-                    />
+                    <div className="inner_progress"></div>
                   </div>
                 </div>
                 <div className="uchiru-head__right-group">
                 </div>
-                {/* <div className="beads-wrapper">
-                  <div id="progress"><div className="inner_progress"><i className="az_ball_0" id="bead0" style={{left: '4px'}} /><i className="az_ball_1" id="bead1" style={{left: '28px'}} /></div></div>
-                </div> */}
               </div>
               <div className="card_content">
                 <div id="board" className="uchiru-place card player-1 script3808 fixed cr" style={{}}>
@@ -165,17 +159,12 @@ class Exam extends React.Component {
                       <div className="button-basic__placeholder" style={{ visibility: 'hidden' }}>
                         <div className="button-basic__placeholder_inner ci">Xác nhận</div>
                       </div>
-
-                      {/* <div className="button-basic__wrong" /> */}
                       <div className="button-basic__right" />
                       <div className="button-basic__text">
                         <div className="button-basic__text_inner ci">Xác nhận</div>
                       </div>
                     </div>
                   </div>
-
-                  {/* <div className="uchiru-keypad-3__keypad" style={{display: 'none'}}><div className="uchiru-keypad-3__keypad__background"><div className="uchiru-keypad-3__keypad__background_blured" /></div><div className="uchiru-keypad-3__keypad__buttons-holder"><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>1</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>2</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>3</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>4</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>5</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>6</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>7</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>8</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>9</div><div className="uchiru-keypad-3__keypad__button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>0</div><div className="uchiru-keypad-3__keypad__button uchiru-keypad-3__keypad__button_system uchiru-keypad-3__keypad__button_backspace" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>&nbsp;</div><div className="uchiru-keypad-3__keypad__button uchiru-keypad-3__keypad__button_system uchiru-keypad-3__keypad__button_enter uchiru-keypad-3__keypad__button_type_ok uchiru-keypad-3__keypad__button_color_blue uchiru-keypad-3__keypad__button_last-button" style={{fontFamily: '"Helvetica-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important'}}>OK</div></div></div></div>
-                <div className="keypad-iwb-2-hacker keypad-iwb-2-hacker-hide"><div className="keypad_buttons_holder"><div className="keypad_button keypad_button_1">1</div><div className="keypad_button keypad_button_2">2</div><div className="keypad_button keypad_button_3">3</div><div className="keypad_button keypad_button_4">4</div><div className="keypad_button keypad_button_5">5</div><div className="keypad_button keypad_button_6">6</div><div className="keypad_button keypad_button_7">7</div><div className="keypad_button keypad_button_8">8</div><div className="keypad_button keypad_button_9">9</div><div className="keypad_button keypad_button_0">0</div><div className="keypad_button keypad_button_plus">&nbsp;</div><div className="keypad_button keypad_button_minus">&nbsp;</div><div className="keypad_button keypad_button_multiply">&nbsp;</div><div className="keypad_button keypad_button_divide">&nbsp;</div><div className="keypad_button keypad_button_backspace">&nbsp;</div><div className="keypad_button keypad_button_enter">OK</div></div><div className="keypad-move">&nbsp;</div><div className="keypad-showhide">Show Smartboard Keyboard</div> */}
                 </div>
               </div>
             </div>
