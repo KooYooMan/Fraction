@@ -33,7 +33,7 @@ class GreenBead extends React.Component {
                 from={{ left: `${newPosition[id]}px` }}
                 to={{ left: `${x}px` }}
                 config={{
-                    duration: 200
+                    duration: 50
                 }}
             >
                 {
