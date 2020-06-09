@@ -157,15 +157,13 @@ class PlayScreen extends Component {
             className="tc b--blue dib ba br3 pa3 ma2 grow bw2 shadow-5 pointer center"
             onClick={() => {
               const result = this.inputValidation();
-              // this.resetState();
               if (result === 1) {
-                // this.props.getMoveBead()[this.props.exercisesLeft - 1]();
-
-                this.props.finishExercise(1, this.resetState);
+								this.props.pass();
                 this.fade();
               } else if (result === -1) {
-                this.props.finishExercise(-1, this.resetState);
+                this.props.fail();
               }
+							this.resetState();
             }}
           >
             Kiểm tra
